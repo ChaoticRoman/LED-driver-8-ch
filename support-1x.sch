@@ -1,0 +1,711 @@
+EESchema Schematic File Version 4
+LIBS:driver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 "template='/home/roman/electronics/kicad/templates/LED-driver-support/support.sch' N-clones=1 ref-offset=0 ref-spacing=50"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2725 2125 3175 2125
+Wire Wire Line
+	2475 1825 3175 1825
+Connection ~ 3425 2125
+Connection ~ 3175 2125
+Connection ~ 3425 1825
+Connection ~ 3175 1825
+$Comp
+L driver-rescue:C C3
+U 1 1 5743501F
+P 3425 1975
+AR Path="/5743501F" Ref="C3"  Part="1" 
+AR Path="/57795EE6/5743501F" Ref="C3"  Part="1" 
+F 0 "C3" H 3475 2075 40  0000 L CNN
+F 1 "100n" H 3225 1875 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3425 2250 40  0000 C CNN
+F 3 "" H 3425 1975 60  0000 C CNN
+	1    3425 1975
+	-1   0    0    1   
+$EndComp
+$Comp
+L driver-rescue:C C1
+U 1 1 57435020
+P 3175 1975
+AR Path="/57435020" Ref="C1"  Part="1" 
+AR Path="/57795EE6/57435020" Ref="C1"  Part="1" 
+F 0 "C1" H 3175 2075 40  0000 L CNN
+F 1 "10n" H 3025 1875 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3175 2325 40  0000 C CNN
+F 3 "" H 3175 1975 60  0000 C CNN
+	1    3175 1975
+	-1   0    0    1   
+$EndComp
+$Comp
+L driver-rescue:CONN_01X02 P1
+U 1 1 57435021
+P 2275 1875
+F 0 "P1" H 2275 2025 40  0000 C CNN
+F 1 "CONN_01X02" V 2375 1875 40  0000 C CNN
+F 2 "Connect:bornier2" V 2475 1875 40  0000 C CNN
+F 3 "" H 2275 1875 60  0000 C CNN
+	1    2275 1875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 57435022
+P 2475 1825
+F 0 "#FLG01" H 2475 1920 40  0001 C CNN
+F 1 "PWR_FLAG" H 2475 2005 40  0000 C CNN
+F 2 "" H 2475 1825 40  0000 C CNN
+F 3 "" H 2475 1825 60  0000 C CNN
+	1    2475 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 1925 2725 1925
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 57435023
+P 2475 1925
+F 0 "#FLG02" H 2475 2020 40  0001 C CNN
+F 1 "PWR_FLAG" H 2475 2105 40  0000 C CNN
+F 2 "" H 2475 1925 40  0000 C CNN
+F 3 "" H 2475 1925 60  0000 C CNN
+	1    2475 1925
+	-1   0    0    1   
+$EndComp
+Text HLabel 4175 1825 2    40   Input ~ 0
+VCC
+Wire Wire Line
+	2725 1925 2725 2125
+Connection ~ 2475 1825
+Connection ~ 2475 1925
+$Comp
+L driver-rescue:ZENERsmall D2
+U 1 1 57435024
+P 4125 1975
+F 0 "D2" H 4125 2075 40  0000 C CNN
+F 1 "TVSD30V" H 4125 1875 40  0000 C CNN
+F 2 "Diodes_SMD:SMB_Standard" V 3850 1975 40  0000 C CNN
+F 3 "" H 4125 1975 60  0000 C CNN
+	1    4125 1975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4125 1875 4125 1825
+Connection ~ 4125 1825
+Wire Wire Line
+	4125 2075 4125 2125
+Connection ~ 4125 2125
+$Comp
+L driver-rescue:R_Small R8
+U 1 1 5743515E
+P 8225 4325
+F 0 "R8" V 8325 4375 50  0000 L CNN
+F 1 "1k" V 8325 4225 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8050 4025 50  0000 C CNN
+F 3 "" H 8225 4325 60  0000 C CNN
+	1    8225 4325
+	0    1    1    0   
+$EndComp
+$Comp
+L driver-rescue:R_Small R9
+U 1 1 5743515F
+P 8225 4525
+F 0 "R9" V 8325 4575 50  0000 L CNN
+F 1 "1k" V 8325 4425 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8425 4225 50  0000 C CNN
+F 3 "" H 8225 4525 60  0000 C CNN
+	1    8225 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L driver-rescue:R_Small R11
+U 1 1 57435160
+P 9175 5125
+F 0 "R11" V 9275 4975 50  0000 L CNN
+F 1 "100k" V 9275 5175 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9400 5125 50  0000 C CNN
+F 3 "" H 9175 5125 60  0000 C CNN
+	1    9175 5125
+	0    1    1    0   
+$EndComp
+$Comp
+L driver-rescue:R_Small R10
+U 1 1 57435161
+P 9175 3575
+F 0 "R10" V 9275 3425 50  0000 L CNN
+F 1 "100k" V 9275 3625 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9075 3575 50  0000 C CNN
+F 3 "" H 9175 3575 60  0000 C CNN
+	1    9175 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 57435162
+P 9675 3850
+F 0 "#PWR03" H 9675 3600 50  0001 C CNN
+F 1 "GND" H 9675 3700 50  0000 C CNN
+F 2 "" H 9675 3850 50  0000 C CNN
+F 3 "" H 9675 3850 60  0000 C CNN
+	1    9675 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 3800 0    60   ~ 0
+100x differential amplifier
+Text Notes 9675 4275 0    60   ~ 0
+1 V / C
+$Comp
+L power:GND #PWR04
+U 1 1 57435163
+P 10500 2300
+F 0 "#PWR04" H 10500 2050 50  0001 C CNN
+F 1 "GND" H 10500 2150 50  0000 C CNN
+F 2 "" H 10500 2300 50  0000 C CNN
+F 3 "" H 10500 2300 60  0000 C CNN
+	1    10500 2300
+	1    0    0    -1  
+$EndComp
+Text Label 7800 1725 0    60   ~ 0
+VCC
+$Comp
+L driver-rescue:CONN_01X03 P3
+U 1 1 57435164
+P 7425 2075
+F 0 "P3" H 7425 2275 50  0000 C CNN
+F 1 "LM335" V 7525 2075 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" V 7625 2075 50  0000 C CNN
+F 3 "" H 7425 2075 60  0000 C CNN
+	1    7425 2075
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 7625 1975
+$Comp
+L power:GND #PWR05
+U 1 1 57435165
+P 7625 2175
+F 0 "#PWR05" H 7625 1925 50  0001 C CNN
+F 1 "GND" H 7625 2025 50  0000 C CNN
+F 2 "" H 7625 2175 50  0000 C CNN
+F 3 "" H 7625 2175 60  0000 C CNN
+	1    7625 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:R_Small R7
+U 1 1 57435166
+P 7800 1975
+F 0 "R7" V 7900 2025 50  0000 L CNN
+F 1 "20k" V 7900 1875 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8550 2175 50  0000 C CNN
+F 3 "" H 7800 1975 60  0000 C CNN
+	1    7800 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:C_Small C5
+U 1 1 57435167
+P 9175 4025
+F 0 "C5" V 9275 3825 50  0000 L CNN
+F 1 "100n" V 9275 4075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 9225 5075 50  0000 C CNN
+F 3 "" H 9175 4025 60  0000 C CNN
+	1    9175 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 57435168
+P 9275 4025
+F 0 "#PWR06" H 9275 3775 50  0001 C CNN
+F 1 "GND" H 9275 3875 50  0000 C CNN
+F 2 "" H 9275 4025 50  0000 C CNN
+F 3 "" H 9275 4025 60  0000 C CNN
+	1    9275 4025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 57435169
+P 9075 4825
+F 0 "#PWR07" H 9075 4575 50  0001 C CNN
+F 1 "GND" H 9075 4675 50  0000 C CNN
+F 2 "" H 9075 4825 50  0000 C CNN
+F 3 "" H 9075 4825 60  0000 C CNN
+	1    9075 4825
+	0    -1   -1   0   
+$EndComp
+Text Notes 7925 2250 0    60   ~ 0
+10mV/K, 3.0V@27C, 3.25V@52C
+Wire Wire Line
+	8325 4325 8675 4325
+Wire Wire Line
+	8325 4525 8675 4525
+Wire Wire Line
+	8675 3575 9075 3575
+Wire Wire Line
+	9275 3575 9675 3575
+Wire Wire Line
+	8675 4525 8675 5125
+Wire Wire Line
+	8675 5125 9075 5125
+Wire Wire Line
+	9275 5125 10625 5125
+Wire Wire Line
+	10625 5125 10625 4425
+Connection ~ 8675 4325
+Connection ~ 8675 4525
+Wire Wire Line
+	7800 1725 7800 1875
+Wire Wire Line
+	8675 3575 8675 4325
+Wire Wire Line
+	9675 3575 9675 3850
+Connection ~ 9075 4025
+Wire Wire Line
+	10625 4425 9475 4425
+$Comp
+L driver-rescue:POT RV2
+U 1 1 5743516A
+P 10500 1950
+F 0 "RV2" H 10500 1828 50  0000 C CNN
+F 1 "5K" H 10500 1737 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296P_3-8Zoll_Angular_ScrewFront" H 10375 1625 50  0000 C CNN
+F 3 "" H 10500 1950 50  0000 C CNN
+	1    10500 1950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9075 4825 9075 4725
+$Comp
+L driver-rescue:LM358 U1
+U 2 1 5743516B
+P 9175 4425
+F 0 "U1" H 9525 4475 50  0000 L CNN
+F 1 "LM358" H 9500 4375 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8750 3850 50  0000 L CNN
+F 3 "" H 9175 4425 50  0000 C CNN
+	2    9175 4425
+	1    0    0    -1  
+$EndComp
+Text Label 8975 4025 2    60   ~ 0
+VCC
+$Comp
+L driver-rescue:R_Small R5
+U 1 1 5743516C
+P 3500 3425
+F 0 "R5" V 3600 3475 50  0000 L CNN
+F 1 "5k6" V 3600 3325 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4350 3425 50  0000 C CNN
+F 3 "" H 3500 3425 60  0000 C CNN
+	1    3500 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:CONN_01X03 P2
+U 1 1 5743516D
+P 2475 3725
+F 0 "P2" H 2475 3925 50  0000 C CNN
+F 1 "TL431" V 2575 3725 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" V 2675 3575 50  0000 C CNN
+F 3 "" H 2475 3725 60  0000 C CNN
+	1    2475 3725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:R_Small R6
+U 1 1 5743516E
+P 3725 3825
+F 0 "R6" V 3675 3950 50  0000 L CNN
+F 1 "1k" V 3650 3625 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3550 3825 50  0000 C CNN
+F 3 "" H 3725 3825 60  0000 C CNN
+	1    3725 3825
+	0    1    -1   0   
+$EndComp
+$Comp
+L driver-rescue:R_Small R4
+U 1 1 5743516F
+P 3250 3825
+F 0 "R4" V 3200 3950 50  0000 L CNN
+F 1 "2k" V 3200 3625 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3000 3825 50  0000 C CNN
+F 3 "" H 3250 3825 60  0000 C CNN
+	1    3250 3825
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2675 3825 2775 3825
+Wire Wire Line
+	2675 3625 3500 3625
+Wire Wire Line
+	3350 3825 3500 3825
+Wire Wire Line
+	2675 3725 3500 3725
+Connection ~ 3500 3625
+Text Label 4650 3625 0    60   ~ 0
+3.75V
+Text Label 7650 4525 2    60   ~ 0
+T_POT
+Text Label 3500 3250 0    60   ~ 0
+VCC
+Wire Wire Line
+	3500 3250 3500 3325
+$Comp
+L power:GND #PWR08
+U 1 1 57435170
+P 2775 3825
+F 0 "#PWR08" H 2775 3575 50  0001 C CNN
+F 1 "GND" H 2775 3675 50  0000 C CNN
+F 2 "" H 2775 3825 50  0000 C CNN
+F 3 "" H 2775 3825 60  0000 C CNN
+	1    2775 3825
+	1    0    0    -1  
+$EndComp
+Connection ~ 2775 3825
+Wire Wire Line
+	3500 3625 3500 3525
+Wire Wire Line
+	3500 3725 3500 3825
+Connection ~ 3500 3825
+Wire Wire Line
+	3825 3625 3825 3825
+Connection ~ 3825 3625
+$Comp
+L driver-rescue:POT RV1
+U 1 1 57435630
+P 2925 5900
+F 0 "RV1" H 2925 5800 50  0000 C CNN
+F 1 "5k" H 2925 5900 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296P_3-8Zoll_Angular_ScrewFront" V 2325 5900 50  0000 C CNN
+F 3 "" H 2925 5900 60  0000 C CNN
+	1    2925 5900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2925 6050 2925 6200
+Text HLabel 5450 6000 2    60   Input ~ 0
+POT
+$Comp
+L power:GND #PWR09
+U 1 1 57435632
+P 2925 6250
+F 0 "#PWR09" H 2925 6000 50  0001 C CNN
+F 1 "GND" H 2925 6100 50  0000 C CNN
+F 2 "" H 2925 6250 50  0000 C CNN
+F 3 "" H 2925 6250 60  0000 C CNN
+	1    2925 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:Q_NMOS_GSD Q1
+U 1 1 57435635
+P 3550 7050
+F 0 "Q1" H 3741 7141 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3741 7050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3741 6959 50  0000 L CNN
+F 3 "" H 3550 7050 50  0000 C CNN
+	1    3550 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:R_Small R2
+U 1 1 57435636
+P 2650 7050
+F 0 "R2" V 2750 6975 50  0000 L CNN
+F 1 "4k7" V 2550 6975 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2450 7050 50  0000 C CNN
+F 3 "" H 2650 7050 60  0000 C CNN
+	1    2650 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L driver-rescue:R_Small R3
+U 1 1 57435637
+P 3025 7250
+F 0 "R3" H 3055 7270 50  0000 L CNN
+F 1 "20k" H 3055 7210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3200 7675 50  0000 C CNN
+F 3 "" H 3025 7250 60  0000 C CNN
+	1    3025 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3025 7150 3025 7050
+Wire Wire Line
+	2750 7050 3025 7050
+Connection ~ 3025 7050
+$Comp
+L driver-rescue:ZENERsmall D1
+U 1 1 57435638
+P 3150 7250
+F 0 "D1" V 3059 7319 50  0000 L CNN
+F 1 "15V" V 3150 7319 50  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" V 3675 6275 50  0000 L CNN
+F 3 "" H 3150 7250 50  0000 C CNN
+	1    3150 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 7350 3075 7350
+Connection ~ 3075 7350
+Wire Wire Line
+	3150 7150 3150 7050
+Connection ~ 3150 7050
+Wire Wire Line
+	2475 7050 2550 7050
+$Comp
+L driver-rescue:LM358 U1
+U 1 1 57435639
+P 4300 6000
+F 0 "U1" H 4675 6175 50  0000 L CNN
+F 1 "LM358" H 4675 6075 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4675 6300 50  0000 L CNN
+F 3 "" H 4300 6000 50  0000 C CNN
+	1    4300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6000 4950 6000
+Wire Wire Line
+	3075 5900 3300 5900
+Wire Wire Line
+	4000 6100 4000 6425
+Wire Wire Line
+	4000 6425 4950 6425
+Wire Wire Line
+	4950 6425 4950 6000
+Connection ~ 4950 6000
+$Comp
+L power:GND #PWR010
+U 1 1 57435E30
+P 4175 2125
+F 0 "#PWR010" H 4175 1875 50  0001 C CNN
+F 1 "GND" H 4225 1900 50  0000 C CNN
+F 2 "" H 4175 2125 50  0000 C CNN
+F 3 "" H 4175 2125 50  0000 C CNN
+	1    4175 2125
+	1    0    0    -1  
+$EndComp
+Text Label 3725 1825 0    60   ~ 0
+VCC
+$Comp
+L power:GND #PWR011
+U 1 1 574381E4
+P 3075 7425
+F 0 "#PWR011" H 3075 7175 50  0001 C CNN
+F 1 "GND" H 3075 7275 50  0000 C CNN
+F 2 "" H 3075 7425 50  0000 C CNN
+F 3 "" H 3075 7425 60  0000 C CNN
+	1    3075 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 7425 3075 7350
+$Comp
+L power:GND #PWR012
+U 1 1 57438371
+P 3650 7325
+F 0 "#PWR012" H 3650 7075 50  0001 C CNN
+F 1 "GND" H 3650 7175 50  0000 C CNN
+F 2 "" H 3650 7325 50  0000 C CNN
+F 3 "" H 3650 7325 60  0000 C CNN
+	1    3650 7325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7325 3650 7250
+Wire Wire Line
+	7625 2075 7800 2075
+Connection ~ 7800 2075
+Text Label 7650 4325 2    60   ~ 0
+T_SENSOR
+Text Label 11050 1950 0    60   ~ 0
+T_POT
+Wire Wire Line
+	10500 2100 10500 2275
+Text Label 1825 5625 0    60   ~ 0
+3.75V
+Wire Wire Line
+	10500 1625 10500 1800
+Wire Wire Line
+	2925 5625 2925 5750
+$Comp
+L driver-rescue:R_Small R1
+U 1 1 5743CCD4
+P 2350 5625
+F 0 "R1" V 2300 5750 50  0000 L CNN
+F 1 "2k" V 2300 5425 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2200 5625 50  0000 C CNN
+F 3 "" H 2350 5625 60  0000 C CNN
+	1    2350 5625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1825 5625 2250 5625
+Wire Wire Line
+	2450 5625 2925 5625
+Text Label 2650 5625 0    60   ~ 0
+2.7V
+$Comp
+L driver-rescue:C C4
+U 1 1 5743D7B4
+P 4550 3800
+AR Path="/5743D7B4" Ref="C4"  Part="1" 
+AR Path="/57795EE6/5743D7B4" Ref="C4"  Part="1" 
+F 0 "C4" H 4600 3900 40  0000 L CNN
+F 1 "100n" H 4350 3700 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4550 4175 40  0000 C CNN
+F 3 "" H 4550 3800 60  0000 C CNN
+	1    4550 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 3650 4550 3625
+Connection ~ 4550 3625
+$Comp
+L power:GND #PWR013
+U 1 1 5743D9A5
+P 4550 3950
+F 0 "#PWR013" H 4550 3700 50  0001 C CNN
+F 1 "GND" H 4550 3800 50  0000 C CNN
+F 2 "" H 4550 3950 50  0000 C CNN
+F 3 "" H 4550 3950 60  0000 C CNN
+	1    4550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L driver-rescue:C C2
+U 1 1 5743EAF4
+P 3300 6050
+AR Path="/5743EAF4" Ref="C2"  Part="1" 
+AR Path="/57795EE6/5743EAF4" Ref="C2"  Part="1" 
+F 0 "C2" H 3400 6150 40  0000 L CNN
+F 1 "100n" H 3100 6150 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3300 5400 40  0000 C CNN
+F 3 "" H 3300 6050 60  0000 C CNN
+	1    3300 6050
+	-1   0    0    1   
+$EndComp
+Connection ~ 3300 5900
+Wire Wire Line
+	2925 6200 3300 6200
+Connection ~ 2925 6200
+Text Label 10500 1625 0    60   ~ 0
+3.75V
+Wire Wire Line
+	3650 6850 3650 5900
+Connection ~ 3650 5900
+Wire Wire Line
+	7650 4525 8125 4525
+Wire Wire Line
+	7650 4325 8125 4325
+Wire Wire Line
+	9075 4025 9075 4125
+Wire Wire Line
+	8975 4025 9075 4025
+$Comp
+L driver-rescue:C C6
+U 1 1 57442911
+P 10950 2125
+AR Path="/57442911" Ref="C6"  Part="1" 
+AR Path="/57795EE6/57442911" Ref="C6"  Part="1" 
+F 0 "C6" H 11050 2225 40  0000 L CNN
+F 1 "100n" H 10750 2225 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10950 2500 40  0000 C CNN
+F 3 "" H 10950 2125 60  0000 C CNN
+	1    10950 2125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10500 2275 10950 2275
+Connection ~ 10500 2275
+Wire Wire Line
+	10650 1950 10950 1950
+Wire Wire Line
+	10950 1950 10950 1975
+Connection ~ 10950 1950
+Text Label 8400 2075 0    60   ~ 0
+T_SENSOR
+Text Label 10625 4425 2    60   ~ 0
+SHUTDOWN
+Text Label 2475 7050 2    60   ~ 0
+SHUTDOWN
+Wire Wire Line
+	3425 2125 4125 2125
+Wire Wire Line
+	3175 2125 3425 2125
+Wire Wire Line
+	3425 1825 4125 1825
+Wire Wire Line
+	3175 1825 3425 1825
+Wire Wire Line
+	4125 1825 4175 1825
+Wire Wire Line
+	4125 2125 4175 2125
+Wire Wire Line
+	8675 4325 8875 4325
+Wire Wire Line
+	8675 4525 8875 4525
+Wire Wire Line
+	3500 3625 3825 3625
+Wire Wire Line
+	2775 3825 3150 3825
+Wire Wire Line
+	3500 3825 3625 3825
+Wire Wire Line
+	3825 3625 4550 3625
+Wire Wire Line
+	3025 7050 3150 7050
+Wire Wire Line
+	3075 7350 3150 7350
+Wire Wire Line
+	3150 7050 3350 7050
+Wire Wire Line
+	4950 6000 5450 6000
+Wire Wire Line
+	7800 2075 8400 2075
+Wire Wire Line
+	4550 3625 4650 3625
+Wire Wire Line
+	2925 6200 2925 6250
+Wire Wire Line
+	3650 5900 4000 5900
+Wire Wire Line
+	10500 2275 10500 2300
+Wire Wire Line
+	10950 1950 11050 1950
+Connection ~ 3300 6200
+Wire Wire Line
+	3300 6200 3550 6200
+Wire Wire Line
+	3550 6200 3550 6150
+Wire Wire Line
+	3550 5950 3550 5900
+Wire Wire Line
+	3550 5900 3650 5900
+Wire Wire Line
+	3300 5900 3550 5900
+Connection ~ 3550 5900
+$Comp
+L driver-rescue:R_Small R12
+U 1 1 57794951
+P 3550 6050
+F 0 "R12" H 3275 5975 50  0000 L CNN
+F 1 "100k" H 3250 6050 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3550 5550 50  0000 C CNN
+F 3 "" H 3550 6050 60  0000 C CNN
+	1    3550 6050
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
